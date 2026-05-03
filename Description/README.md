@@ -1,1 +1,8 @@
+Pre-attack Preparation:
 
+Before performing an attack, the attacker collects training data by placing the Raspberry Pi equipped with a USB mini microphone at the position where the attack device would be mounted during deployment (inside the rear bumper cavity), and recording the chime while repeatedly cycling the tailgate. The captured audio is processed in 200 ms frames using a sliding window with a 50 ms hop size, producing 75% overlap between consecutive frames. Each audio segment is converted to a decibel-scale spectrogram via the Short-Time Fourier Transform (STFT). To detect chime activity in each 200 ms chunk, a lightweight convolutional neural network (CNN) is emploied to operate on the input of two-channel spectrogram. The trained detection model will be upload to the Raspberry Pi. 
+
+Attack Execution:
+
+As shown by the connection and components in 'Design>gadgetsize.pdf', the attacking device will be covertly mounted to the rear bumper cavity or chassis of the vehicle after the victim leaves. Once the victim returns and opens the tailgate, the adversary initiates the attack program, which begins listening passively. When the victim triggers the closing sequence with a kick gesture, the attack device automatically detects the onset of the closing operation through an acoustic side channel, specially the audible chime emitted during liftgate descent. After a calibrated delay, the device emits a spoofed kick event via EMI, halting at a position just short of latch engagement, leaving the vehicle physically unlocked while presenting the appearance of a completed locking interaction. The attacker then gains access to the trunk after the victim departs. 
+ 
