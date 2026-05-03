@@ -1,1 +1,1 @@
-
+This repository includes some typical kick sensing modules either from Huf or Brose. The model numbers and components of the modules can be observed. We also performed a physical teardown analysis on an OEM kick sensing unit from an Audi Q5, and list the double sides of the board in the control module.   
