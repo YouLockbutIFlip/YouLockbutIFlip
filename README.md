@@ -18,9 +18,9 @@ The AudioProcess directory contains tools for audio processing, segmentation, an
 
 The Detection directory contains
 
-- `audio_cnn_model_rpi_2ch.pth`:
+- `audio_cnn_model_rpi_2ch.pth`: pretrained model
 - `classification_new.py`: code needed to be download onto the Raspberry Pi to classify the first chime once tailgate starting lowering
-- `model_info_rpi_2ch.py`:
+- `model_info_rpi_2ch.pth`: pretrained model information
 - `requirements.txt`: Python dependencies for the the audio classification
 - 
 #### Description
