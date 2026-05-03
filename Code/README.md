@@ -1,4 +1,4 @@
-main.py: A GUI application for visualizing audio spectrograms and creating labeled segments
-clip.py: Core functionality for splitting audio files into smaller segments based on markers
-preprocess.py: Preprocessing utilities for audio data
-requirements.txt: Python dependencies for the ClipTool
+- main.py: A GUI application for visualizing audio spectrograms and creating labeled segments
+- clip.py: Core functionality for splitting audio files into smaller segments based on markers
+- preprocess.py: Preprocessing utilities for audio data
+- requirements.txt: Python dependencies for the ClipTool
